@@ -31,22 +31,18 @@
 
 </head>
 <body>
-<nav id="navmenu" class="navmenu">
+
+      <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="{% url 'index' %}">Home</a></li>
-          <li><a href="{% url 'about' %}">About</a></li>
-          <li><a href="{% url 'schedule' %}">Schedule</a></li>
-          <li><a href="speakers.html">Speakers</a></li>
-          <li><a href="venue.html">Venue</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
           <li class="dropdown"><a href="#"><span>More Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="speaker-details.html">Speaker Details</a></li>
-              <li><a href="{% url 'tickets' %}">Tickets</a></li>
-              <li><a href="{% url 'tickets' %}">Buy Tickets</a></li>
-              <li><a href="{% url 'gallery' %}">Gallery</a></li>
-              <li><a href="terms.html">Terms</a></li>
-              <li><a href="privacy.html">Privacy</a></li>
-              <li><a href="404.html">404</a></li>
+
+              <li><a href="tickets.html">Tickets</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+
             </ul>
           </li>
           <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -66,10 +62,20 @@
               <li><a href="#">Dropdown 4</a></li>
             </ul>
           </li>
-          <li><a href="{% url 'contacts' %}" class="active">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+
+      <div class="header-social-links">
+        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+
+
 {% block content %}
 
 {% endblock %}
